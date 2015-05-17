@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_rows"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/widget_frame"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/widget_details"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="@dimen/widget_spacing"
+        android:layout_marginLeft="@dimen/widget_spacing"
+        android:layout_marginRight="@dimen/widget_spacing"
+        android:layout_marginTop="@dimen/widget_spacing"
+        android:background="@drawable/widget_background"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/widget_spacing"
+        android:paddingRight="@dimen/widget_spacing" >
+
+        <ImageView
+            android:id="@+id/widget_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/creds"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/widget_icon"
+            android:gravity="left|center_vertical"
+            android:maxLines="1"
+            android:textColor="#8D8D8D"
+            android:textSize="@dimen/widget_small_text" />
+
+        <TextView
+            android:id="@+id/reputation"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/creds"
+            android:gravity="right|center_vertical"
+            android:maxLines="1"
+            android:paddingRight="@dimen/widget_spacing"
+            android:textColor="#8D8D8D"
+            android:textSize="@dimen/widget_large_text" />
+    </RelativeLayout>
+
+</LinearLayout>
